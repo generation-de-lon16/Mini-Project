@@ -1,0 +1,102 @@
+1	Store products and orders-	Use lists for products and dictionaries for orders
+2	Create a main menu-	Use while True so it runs continuously
+3	Manage products-	Create functions to view, add, update, and delete products
+4	Manage orders-	Create functions to view, add, update, and delete orders
+
+1st Step: Setting up the  Structure
+Creating a list to store product names for example "Mocha", "Americano"
+Create an empty list for customer orders like orders()
+Orders need to store multiple details (name, address, phone number, status), so I will use a dictionary inside the list
+
+2nd Step: Build the Main Menu
+The user needs a menu to choose what they want to do
+The menu should keep running until they choose to exit → I will use a while True loop
+The user can enter a number to:
+View product options
+View order options
+Exit the program
+
+3rd Step: Create the Product Menu
+If the user picks Product Menu, I need another menu for:
+Viewing all products
+Adding a product
+Updating a product
+Deleting a product
+Returning to the main menu
+I will use another while True loop to keep the menu running until they exit...
+
+4th Step: Viewing Products
+I need to loop through the list and show all products with a number
+The index number should be displayed next to each product
+If the list is empty, display "No products available..."
+
+5th Step: Adding a Product
+Ask the user to type in a new product name
+Add the product to the list using .append().
+Display a message confirming the product was added.
+
+6th Step: Updating a Product
+Show the product list so the user can see the product numbers
+Ask the user which product number they want to update
+If they enter a valid number:
+Ask for a new product name
+Replace the old product with the new one
+
+If they enter an invalid number.. show an error message
+
+7th Step: Deleting a Product
+Show the product list so the user can see product numbers
+Ask the user to enter a number to delete
+If the number is valid:
+Use .pop() to fully remove the product from the list
+If they enter an invalid number.. show an error message
+
+8th Step: Create the Order Menu
+If the user picks Order Menu, I need another menu for:
+Viewing orders
+Adding an order
+Updating an order status
+Updating order details (name, address, phone)
+Deleting an order
+Returning to the main menu
+Another while True loop will keep this menu running until they exit.
+
+9th Step: Viewing Orders
+Show the order list with customer details.
+If there are no orders, display "No orders yet.."
+
+10th Step: Adding an Order
+Ask the user for:
+Customer name
+Customer address
+Customer phone number
+The order must include a status, so it starts as "Preparing"
+Store the details inside a dictionary and add it to the list
+
+11th Step: Updating Order Status
+Show all orders so the user can see order numbers
+Ask the user which order number they want to update
+If valid, show status options:
+0 = Preparing
+1 = Shipped
+2 = Delivered
+Change the order status based on the user’s choice
+
+12th Step: Updating Order Details
+Show all orders so the user can see order numbers
+Ask the user which order number they want to update
+Ask for a new name, address, and phone number
+If they leave it blank, the old value stays the same
+
+13 th Step: Deleting an Order
+Show all orders so the user can see order numbers
+Ask the user which order number to delete
+If valid, remove the order from the list using .pop()
+If invalid, show an error message
+
+14th Step: Run the Program
+Call main_menu() to start the program
+The user can now:
+Manage products
+Manage orders
+Exit the program when done
